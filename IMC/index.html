@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="/style/reset.css" />
+    <link rel="stylesheet" href="/style/main.css" />
+    <link rel="stylesheet" href="/style/relatorio.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container" id="container">
+        <div class="principal__imagem">
+          <img
+            class="principal__imagem__img"
+            src="img/img__principal.png"
+            alt="Imagem ilustrativa de Homem preparado para treinar"
+          />
+        </div>
+        <div class="principal__conteudo">
+          <form>
+            <h1 class="principal__conteudo__titulo">Calcule seu IMC</h1>
+            <p class="principal__conteudo__descricao">
+              IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado
+              pela Organização Mundial de Saúde para calcular o peso ideal de
+              cada pessoa.
+            </p>
+            <div class="principal__conteudo__formulario">
+              <label for="altura">Altura <span>(Metros)</span></label>
+              <input
+                type="text"
+                name="altura"
+                id="altura"
+                maxlength="4"
+                placeholder="1,71"
+              />
+            </div>
+            <div class="principal__conteudo__formulario">
+              <label for="peso">Peso <span>(Kilos)</span></label>
+              <input
+                type="text"
+                name="peso"
+                id="peso"
+                maxlength="4"
+                placeholder="71,3"
+              />
+            </div>
+            <button class="principal__conteudo__botao-envio" id="btn__submit">
+              Enviar
+            </button>
+          </form>
+        </div>
+        <!-- <div class="relatorio__resultado"><h1 id="pontuacao__imc"></h1></div>
+        <div class="container__relatorio">
+        <div class="relatorio__descricao">
+          <h1>O que seu número representa</h1>
+        </div>
+        <div class="relatorio__informacoes">
+          <h1>Seu IMC aponta que:</h1>
+        </div></div>  -->
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/JS/jquery.mask.js"></script>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/validacoes.js"></script>
+    <script src="/JS/trocaDeTelas.js"></script>
+  </body>
+</html>
